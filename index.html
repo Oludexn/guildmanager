@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Discord Guild Manager</title>
+  <script defer src="app.js"></script>
+  <style>
+    body { font-family: sans-serif; max-width: 800px; margin: auto; padding: 2rem; }
+    .guild-card { border: 1px solid #ccc; margin: 1rem 0; padding: 1rem; border-radius: 8px; }
+  </style>
+</head>
+<body>
+  <h1>Manage Your Discord Servers</h1>
+  <button id="loginBtn">Login with Discord</button>
+  <div id="filters" style="display: none;">
+    <h2>Filters</h2>
+    <label>Min Members: <input type="number" id="minMembers"></label><br>
+    <label>Max Members: <input type="number" id="maxMembers"></label><br>
+    <label>Date Joined After: <input type="date" id="joinedAfter"></label><br>
+    <button id="applyFilters">Apply Filters</button>
+  </div>
+  <div id="guildList"></div>
+  <button id="confirmLeave" style="display: none;">Confirm Leave Selected</button>
+</body>
+</html>
